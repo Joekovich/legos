@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="boxicons-2.1.2">
+    <link rel="stylesheet" href="lego.css">
+    <title>Legos</title>
+</head>
+<body>
+
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Lego</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="img/alan.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Beyond Shipping</h2>
+            <h3>Exploring The World</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem cupiditate eveniet
+               sapiente voluptates illum molestias obcaecati corrupti incidunt temporibus. Distinctio.</p>
+            <a href="#">Explore</a>
+        </div>
+
+        <ul class="social">
+            <li><a href="#"><img src="img/facebook (1).png" alt=""></a></li>
+            <li><a href="#"><img src="img/twitter (1).png" alt=""></a></li>
+            <li><a href="#"><img src="img/instagram (1).png" alt=""></a></li>
+        </ul>
+    </section>
+
+    
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Tracking</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Crypto</a></li>
+        </ul>
+    </div>
+
+    <!--Hero-->
+    <section class="hero">
+        <div class="hero-content">
+            <h4>Track your parcel</h4>
+            <p>We are your one stop-shop for all your logistic needs.</p>
+           <a href="#" class="btn-btn-primary">Join Now</a>
+        </div>
+    </section>
+
+
+    <!--Cards-->
+    <section class="container">
+        <div class="card-container">
+            <div class="card">
+                <img src="img/peeps.png" alt="">
+                <h2>Lego Rider</h2>
+                <p>Lego Ride is for express demand</p>
+                <a href="#" class="button">Read More</a>
+            </div>
+            <div class="card">
+                <img src="img/avatar babe.png" alt="">
+                <h2>Lego Front Desk</h2>
+                <p>Lego Ride is for express demand</p>
+                <a href="#" class="button">Read More</a>
+            </div>
+            <div class="card">
+                <img src="img/peeps.png" alt="">
+                <h2>Lego Director</h2>
+                <p>Lego Ride is for express demand</p>
+                <a href="#" class="button">Read More</a>
+            </div>
+            <div class="card">
+                <img src="img/beta babe.png" alt="">
+                <h2>Lego Manager</h2>
+                <p>Lego Ride is for express demand</p>
+                <a href="#" class="button">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Parallax-->
+    <div class="parallax">
+        <div class="contain">
+            <div class="card-board">
+                <h2>Tracking Number</h2>
+                <form>
+                    <input type="email" name="tracker" placeholder="Tracking ID">
+                    <button type="submit">Track</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Welcome to Our Website</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Aspernatur perferendis vero placeat dicta quas labore, 
+            numquam explicabo aliquid eveniet ullam alias laudantium porro.
+            Minus blanditiis deleniti unde expedita reiciendis tempora soluta 
+            corporis ipsa laborum, nobis error vero similique.</p>
+    </div>
+               <!--Accordions-->
+    <div class="accordion">
+        <div class="accordion-header">
+            <h3>Accordion Header</h3>
+            <span class="regular/bx-arrow-to-bottom.svg"></span>
+        </div>
+        <div class="accordion-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Quisquam asperiores earum non temporibus eum dolor, quae doloremque 
+               repellendus pariatur nostrum! Dolorum, repellendus! Adipisci ratione 
+               quidem at necessitatibus vel ab numquam!</p>
+        </div>
+
+        <div class="accordion-header">
+            <h3>Accordion Header</h3>
+            <span class="regular/bx-arrow-to-bottom.svg"></span>
+        </div>
+        <div class="accordion-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Quisquam asperiores earum non temporibus eum dolor, quae doloremque 
+               repellendus pariatur nostrum! Dolorum, repellendus! Adipisci ratione 
+               quidem at necessitatibus vel ab numquam!</p>
+        </div>
+
+        <div class="accordion-header">
+            <h3>Accordion Header</h3>
+            <span class="regular/bx-arrow-to-bottom.svg"></span>
+        </div>
+        <div class="accordion-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Quisquam asperiores earum non temporibus eum dolor, quae doloremque 
+               repellendus pariatur nostrum! Dolorum, repellendus! Adipisci ratione 
+               quidem at necessitatibus vel ab numquam!</p>
+        </div>
+
+        <div class="accordion-header">
+            <h3>Accordion Header</h3>
+            <span class="svg/"></span>
+        </div>
+        <div class="accordion-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Quisquam asperiores earum non temporibus eum dolor, quae doloremque 
+               repellendus pariatur nostrum! Dolorum, repellendus! Adipisci ratione 
+               quidem at necessitatibus vel ab numquam!</p>
+        </div>
+    </div>
+    
+
+    <script>
+
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+
+        var accordion =accordion
+        documents.getElementsByClassName("accordion-header");
+
+        for(var i = 0; i < accordions.length; i++) {
+            accordions[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var accordionContent = this.nextElementSibling;
+                if (accordionContent.style.display === "block")
+            {
+                accordionContent.style.display = "none";
+            } else {
+                accordionContent.style.display = "block";
+            }
+        });
+        }
+
+    </script>
+</body>
+</html>

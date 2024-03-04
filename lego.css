@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* --- showcase --- */
+.showcase {
+    position: relative;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    color: #f2f2f2;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.showcase.active {
+    right: 300px;
+}
+
+.showcase header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: url('img/menu-bar\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.toggle.active{
+    background: url('img/close.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+}
+
+.showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1b6991;
+    mix-blend-mode: overlay;
+}
+
+.text {
+    position: relative;
+    z-index: 10;
+}
+
+.text h2 {
+    font-size: 5em;
+    font-weight: bolder;
+    line-height: 1em;
+    text-transform: uppercase;
+
+}
+
+.text h3 {
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.text p {
+    font-size: 1.1em;
+    margin: 20px 0;
+    font-weight: 300;
+    max-width: 700px;
+}
+
+.text a {
+    display: inline-block;
+    font-size: 1em;
+    background: #f2f2f2;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #333;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    border-radius: 8px;
+}
+
+.text a:hover {
+    letter-spacing: 6px;
+    background: #5701b4;
+    color: #f2f2f2;
+}
+
+.social {
+    position: absolute;
+    bottom: 20px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social li {
+    list-style: none;
+}
+
+.social li a {
+    display: inline-block;
+    margin-right: 20px;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.social li a:hover {
+    transform: scale(1) translateY(-15px);
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #111;
+}
+
+.menu ul li a:hover {
+    color: #5701b9;
+}
+
+
+@media (max-width: 768px) {
+    .showcase, .showcase header {
+        padding: 40px;
+    }
+
+    .text h2 {
+        font-size: 3em;
+    }
+
+    .text h3 {
+        font-size: 2em;
+    }
+}
+
+/* --- Card --- */
+.container {
+   position: relative;
+   z-index: insex;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to left, #ededf7 -4%, #d8d3d8dc 115%);
+}
+
+.card {
+    box-shadow: 5px 8px 8px 0 rgba(10, 8, 5, 0.2);
+    transition: 0.3s;
+    width: 420px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(to left, #22223f -4%, #44295a 115%);
+    border-radius: 15px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 6px 0 rgba(10, 6, 8, 0.8);
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #aaa;
+}
+
+.card p {
+    font-size: 16px;
+    color: #f2f2f2;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    background: #2a5a2c;
+    color: #fffbfb;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.button:hover {
+    background: #3e8e41;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+
+
+/* --- Hero --- */
+.hero {
+    background-image: url("img/delivery.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: #181212;
+}
+
+.hero-content h4 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 1.2rem;
+}
+
+.btn-btn-primary {
+    background: #616060;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px 30px;
+    color: #e8e8ec;
+    margin-top: 10px;
+    text-transform: uppercase;
+    transition: 0.2s;
+    border-radius: 8px;
+}
+
+.btn-btn-primary:hover {
+    font-size: 1em;
+    font-weight: bold;
+    background: #78789e;
+    color: whitesmoke;
+}
+
+@media (max-width: 768px) {
+    .card, .card-container {
+        padding: 10px 20px;
+        margin: 10px 10px;
+    }
+
+}
+
+
+/* --- Parallax ---*/
+.parallax {
+    background-image: url(img/pexel.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.contain {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.card-board {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    margin-right: 20px;
+    width: 500px;
+   
+}
+
+.card-board h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="tracker"] {
+  max-width: 190px;
+  color: #f2f2f2;
+  height: 44px;
+  background-color: #05060f0a;
+  border-radius: .5rem;
+  padding: 0 1rem;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s,background .2s cubic-bezier(.25,.01,.25,1) 0s;
+}
+
+.input:hover, .input:focus, .input-group:hover .input {
+    outline: none;
+    border-color: #373841;
+    transition: color .3s cubic-bezier(.25,.01,.25,1) 0s;
+  }
+  
+  .input-group:hover .label, .input:focus {
+    color: #fffffff1;
+  }
+
+button[type="submit"] {
+    padding: 10px;
+    margin: 10px 10px;
+    border-radius: 14px;
+    border: none;
+    background-color: #095181;
+    color: #f2f2f2;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.content {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+.content h1 {
+    margin-top: 0;
+}
+
+.content p {
+    margin-bottom: 0;
+}
+
+/* --- Accordion --- */
+.accordion {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.accordion-header {
+    background: #f7f7f7;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.accordion-header h3 {
+    margin: 0;
+}
+
+.accordion-content {
+    padding: 10px;
+    background: #f2f2f2;
+    display: none;
+}
+
+.accordion .active .accordion-content {
+    display: block;
+}
+
+
+/*--- Media Queries ---*/
+@media only screen and (max-width: 768px) {
+
+    .hero {
+        display: grid;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .card-container {
+        display: grid;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .container {
+        justify-content: center;
+    }
+
+    .card-board {
+        margin: 20px;
+    }
+}
+
+
+
+
+
